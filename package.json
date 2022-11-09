@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "@types/marked": "^4.0.7",
+    "dompurify": "^2.4.0",
     "marked": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^2.3.4",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
