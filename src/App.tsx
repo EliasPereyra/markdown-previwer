@@ -1,5 +1,7 @@
-import { marked } from 'marked'
 import { useState } from 'react'
+import { marked } from 'marked'
+import DOMPurify from 'dompurify'
+
 import './App.css'
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
 
       <div id="preview-container">
         <header>Preview</header>
-        <div id="preview">{content}</div>
+        <div id="preview">{DOMPurify.sanitize(content)}</div>
       </div>
     </section>
   )
