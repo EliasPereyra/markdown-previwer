@@ -12,7 +12,7 @@ section {
   height: 100vh;
   width: 100vw;
   padding: 5em 5em;
-  background-color: #06283d;
+  background: linear-gradient(190deg, #0c4d75 0%, #06283d 100%);
   display: flex;
   justify-content: space-between;
   gap: 2em;
@@ -48,7 +48,7 @@ h1 {
 
 #preview {
   background-color: #f9f9f9;
-  padding: 10px;
+  padding: 12px;
   height: 30em;
   width: 100%;
   overflow: auto;
