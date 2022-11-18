@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ReactMarkdwon from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 import { defaultText } from './defaultText'
 
@@ -26,7 +27,7 @@ function App() {
       <div id="preview-container">
         <header>Preview</header>
         <div id="preview">
-          <ReactMarkdwon>{content}</ReactMarkdwon>
+          <ReactMarkdwon remarkPlugins={[remarkGfm]}>{content}</ReactMarkdwon>
         </div>
       </div>
     </section>
