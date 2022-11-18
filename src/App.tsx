@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import ReactMarkdwon from 'react-markdown'
 
+import { defaultText } from './defaultText'
+
 import './App.css'
 
 function App() {
-  const [content, setContent] = useState('')
+  const [content, setContent] = useState(defaultText)
 
   const handleChange = (e) => {
     setContent(e.target.value)
@@ -14,7 +16,11 @@ function App() {
     <section>
       <div>
         <header>Editor</header>
-        <textarea onChange={handleChange} id="editor"></textarea>
+        <textarea
+          id="editor"
+          onChange={handleChange}
+          value={content}
+        ></textarea>
       </div>
 
       <div id="preview-container">
