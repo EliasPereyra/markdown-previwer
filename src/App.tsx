@@ -1,24 +1,13 @@
 import { useState } from 'react'
-import { marked } from 'marked'
-import DOMPurify from 'dompurify'
+import ReactMarkdwon from 'react-markdown'
 
 import './App.css'
 
 function App() {
   const [content, setContent] = useState('')
 
-  marked.use({
-    renderer: new marked.Renderer(),
-    langPrefix: 'hljs language-',
-    gfm: true,
-    breaks: true,
-    sanitize: false,
-    xhtml: true,
-  })
-
   const handleChange = (e) => {
-    const html = marked.parse(e.target.value)
-    setContent(html)
+    setContent(e.target.value)
   }
 
   return (
@@ -30,7 +19,9 @@ function App() {
 
       <div id="preview-container">
         <header>Preview</header>
-        <div id="preview">{DOMPurify.sanitize(content)}</div>
+        <div id="preview">
+          <ReactMarkdwon>{content}</ReactMarkdwon>
+        </div>
       </div>
     </section>
   )
