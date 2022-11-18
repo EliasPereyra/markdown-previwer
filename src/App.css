@@ -10,10 +10,12 @@ body {
 
 section {
   height: 100vh;
-  padding: 10em;
+  width: 100vw;
+  padding: 5em 5em;
   background-color: #06283d;
   display: flex;
-  gap: 1em;
+  justify-content: space-between;
+  gap: 2em;
 }
 
 header {
@@ -25,10 +27,11 @@ header {
 
 textarea {
   font-family: Poppins;
-  padding: 10px;
-  width: 30em;
+  font-size: 15px;
+  padding: 12px;
+  height: 26em;
+  width: 40em;
   resize: none;
-  height: 13em;
 }
 textarea:focus {
   outline: none;
@@ -39,11 +42,14 @@ h1 {
 }
 
 #preview-container {
-  width: 30em;
+  width: 100%;
+  height: 20em;
 }
 
 #preview {
   background-color: #f9f9f9;
   padding: 10px;
-  height: 11em;
+  height: 25em;
+  width: 100%;
+  overflow: auto;
 }
