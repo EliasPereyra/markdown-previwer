@@ -29,7 +29,7 @@ textarea {
   font-family: Poppins;
   font-size: 15px;
   padding: 12px;
-  height: 26em;
+  height: 32em;
   width: 40em;
   resize: none;
 }
@@ -49,7 +49,7 @@ h1 {
 #preview {
   background-color: #f9f9f9;
   padding: 10px;
-  height: 25em;
+  height: 30em;
   width: 100%;
   overflow: auto;
 }
