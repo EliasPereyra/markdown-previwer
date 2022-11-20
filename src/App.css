@@ -7,6 +7,13 @@
 body {
   font-family: Poppins, 'sans-serif';
 }
+ul {
+  list-style: none;
+}
+ul,
+ol {
+  margin-left: 1.3em;
+}
 
 section {
   height: 100vh;
