@@ -27,7 +27,10 @@ function App() {
       <div id="preview-container">
         <header>Preview</header>
         <div id="preview">
-          <ReactMarkdwon remarkPlugins={[remarkGfm]}>{content}</ReactMarkdwon>
+          <ReactMarkdwon
+            children={content}
+            remarkPlugins={[remarkGfm]}
+          ></ReactMarkdwon>
         </div>
       </div>
     </section>
