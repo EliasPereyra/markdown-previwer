@@ -26,4 +26,5 @@ export const defaultText =
   - Item 2
   - Item 3
 
+  ![alt text](https://github.com/n48.png "Logo Title")
 `
