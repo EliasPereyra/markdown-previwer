@@ -9,6 +9,21 @@ ol {
   margin-left: 1.3em !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+p,
+img {
+  margin: 0.5rem 0;
+}
+
+h1 {
+  color: rgb(20, 45, 68);
+}
+
 section {
   height: 100vh;
   padding: 5em 5em;
@@ -36,21 +51,6 @@ textarea {
 }
 textarea:focus {
   outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-ol,
-ul,
-p,
-img {
-  margin: 0.5rem 0;
-}
-
-h1 {
-  color: black;
 }
 
 #preview-container {
