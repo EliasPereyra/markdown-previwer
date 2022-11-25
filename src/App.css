@@ -36,13 +36,13 @@ section {
 header {
   background-color: #4c6793;
   padding: 5px 10px;
-  color: #f9f9f9;
+  color: #e7e1e1;
   border: 1px solid #256d85;
 }
 
 textarea {
   background-color: #f9f9f9;
-  font-family: Poppins;
+  font-family: inherit;
   font-size: 15px;
   padding: 12px;
   height: 32em;
