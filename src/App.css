@@ -4,11 +4,9 @@
   box-sizing: border-box;
 }
 
-ul {
-}
 ul,
 ol {
-  margin-left: 1.3em;
+  margin-left: 1.3em !important;
 }
 
 section {
@@ -43,7 +41,11 @@ textarea:focus {
 h1,
 h2,
 h3,
-h4 {
+h4,
+ol,
+ul,
+p,
+img {
   margin: 0.5rem 0;
 }
 
