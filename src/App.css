@@ -43,6 +43,7 @@ textarea:focus {
 
 h1 {
   color: black;
+  margin: 0.5rem 0;
 }
 
 #preview-container {
