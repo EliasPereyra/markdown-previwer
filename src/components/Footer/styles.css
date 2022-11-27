@@ -8,3 +8,6 @@ footer {
   background-color: #0c4d75;
   color: #ddd;
 }
+footer p {
+  margin: 0;
+}
