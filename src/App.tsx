@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import ReactMarkdwon from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMdx from 'remark-mdx'
+import remarkBreaks from 'remark-breaks'
 
 import { defaultText } from './defaultText'
 
@@ -18,7 +20,9 @@ function App() {
     <div>
       <section>
         <div>
-          <header>Editor</header>
+          <header>
+            <b>Editor</b>
+          </header>
           <textarea
             id="editor"
             onChange={handleChange}
@@ -27,11 +31,13 @@ function App() {
         </div>
 
         <div id="preview-container">
-          <header>Preview</header>
+          <header>
+            <b>Preview</b>
+          </header>
           <div id="preview">
             <ReactMarkdwon
               children={content}
-              remarkPlugins={[remarkGfm]}
+              remarkPlugins={[remarkGfm, remarkMdx]}
             ></ReactMarkdwon>
           </div>
         </div>
