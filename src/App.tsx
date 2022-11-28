@@ -8,6 +8,7 @@ import { defaultText } from './defaultText'
 
 import './App.css'
 import Footer from './components/Footer'
+import DownloadBtn from './components/DownloadBtn'
 
 function App() {
   const [content, setContent] = useState(defaultText)
@@ -31,15 +32,17 @@ function App() {
         </div>
 
         <div id="preview-container">
-          <header>
-            <b>Preview</b>
-          </header>
           <div id="preview">
+            <header>
+              <b>Preview</b>
+            </header>
             <ReactMarkdwon
               children={content}
               remarkPlugins={[remarkGfm, remarkMdx]}
+              className="preview-content"
             ></ReactMarkdwon>
           </div>
+          <DownloadBtn />
         </div>
       </section>
       <Footer />
