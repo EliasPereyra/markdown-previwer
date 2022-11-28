@@ -26,7 +26,7 @@ h1 {
 
 section {
   height: 100vh;
-  padding: 5em 5em;
+  padding: 3em 5em;
   background: linear-gradient(190deg, #0c4d75 0%, #06283d 100%);
   display: flex;
   justify-content: space-between;
@@ -55,13 +55,18 @@ textarea:focus {
 
 #preview-container {
   width: 100%;
-  height: 20em;
+  height: 36em;
+  display: flex;
+  flex-direction: column;
 }
 
 #preview {
   background-color: #f9f9f9;
-  padding: 12px;
-  height: 30em;
+  height: 100%;
   width: 100%;
   overflow: auto;
+}
+
+.preview-content {
+  padding: 12px;
 }
