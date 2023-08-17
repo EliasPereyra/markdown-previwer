@@ -24,13 +24,9 @@ h1 {
   color: rgb(20, 45, 68);
 }
 
-section {
-  height: 100vh;
+#layout {
   padding: 3em 5em;
   background: linear-gradient(190deg, #0c4d75 0%, #06283d 100%);
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
 }
 
 header {
@@ -40,21 +36,27 @@ header {
   border: 1px solid #256d85;
 }
 
-textarea {
+#editor-container {
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+}
+
+#editor {
+  color: #333;
   background-color: #f9f9f9;
   font-family: inherit;
   font-size: 15px;
   padding: 12px;
   height: 32em;
-  width: 40em;
+  width: 35em;
   resize: none;
 }
-textarea:focus {
+#editor:focus {
   outline: none;
 }
 
 #preview-container {
-  width: 100%;
   height: 36em;
   display: flex;
   flex-direction: column;
@@ -62,9 +64,9 @@ textarea:focus {
 
 #preview {
   background-color: #f9f9f9;
-  height: 100%;
-  width: 100%;
   overflow: auto;
+  height: 32em;
+  width: 35em;
 }
 
 .preview-content {
