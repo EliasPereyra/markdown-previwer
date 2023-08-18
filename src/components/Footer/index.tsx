@@ -3,18 +3,11 @@ import './styles.css'
 function Footer() {
   return (
     <footer>
-      <p>This project was made thanks to the react-markdown library.</p>
-      <p>You can check it out and give it a try.</p>
       <p>
-        <i>
-          <a
-            href="https://www.npmjs.com/package/react-markdown"
-            target="_blank"
-          >
-            Here
-          </a>
-        </i>{' '}
-        it's the github repository
+        Developed by{' '}
+        <a href="https://github.com/EliasPereyra" target="_blank">
+          EliasPereyra
+        </a>
       </p>
     </footer>
   )
