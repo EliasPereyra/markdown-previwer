@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import ReactMarkdwon from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMdx from 'remark-mdx'
 import remarkBreaks from 'remark-breaks'
@@ -18,11 +17,11 @@ function App() {
   }
 
   return (
-    <div>
-      <section>
+    <section id="layout">
+      <div id="editor-container">
         <div>
           <header>
-            <b>Editor</b>
+            <strong>Editor</strong>
           </header>
           <textarea
             id="editor"
@@ -34,19 +33,13 @@ function App() {
         <div id="preview-container">
           <div id="preview">
             <header>
-              <b>Preview</b>
+              <strong>Preview</strong>
             </header>
-            <ReactMarkdwon
-              children={content}
-              remarkPlugins={[remarkGfm, remarkMdx]}
-              className="preview-content"
-            ></ReactMarkdwon>
           </div>
-          <DownloadBtn />
         </div>
-      </section>
+      </div>
       <Footer />
-    </div>
+    </section>
   )
 }
 
