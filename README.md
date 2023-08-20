@@ -9,7 +9,6 @@ A simple project but for good practicing.
 ## Built with
 
 - ![React.js][react.js]
-- ![react-markdown][react-markdown]
 
 [react.js]: https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white
 [react-markdown]: https://img.shields.io/badge/markdown-000000?style=for-the-badge&logo=markdown&logoColor=white
