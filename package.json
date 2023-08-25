@@ -23,6 +23,7 @@
     "remark-parse": "^10.0.1",
     "remark-pdf": "^0.0.9",
     "remark-rehype": "^10.1.0",
+    "to-vfile": "^8.0.0",
     "unified": "^10.1.2"
   },
   "devDependencies": {
