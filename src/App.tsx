@@ -8,6 +8,7 @@ import { defaultText } from './defaultText'
 import './App.css'
 import Footer from './components/Footer'
 import DownloadBtn from './components/DownloadBtn'
+import Navbar from './components/Navbar'
 
 function App() {
   const [content, setContent] = useState(defaultText)
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <section id="layout">
+      <Navbar />
       <div id="editor-container">
         <div>
           <header>
@@ -35,6 +37,7 @@ function App() {
             <header>
               <strong>Preview</strong>
             </header>
+            <p>{content}</p>
           </div>
         </div>
       </div>
