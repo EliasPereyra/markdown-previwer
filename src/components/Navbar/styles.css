@@ -1,5 +1,19 @@
-ul {
+.navbar-container {
   display: flex;
   justify-content: space-between;
+  padding: 1em 0;
+}
+
+ul {
+  display: flex;
+  gap: 1em;
   align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
