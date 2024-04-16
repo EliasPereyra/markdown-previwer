@@ -34,5 +34,13 @@
     "file-saver": "^2.0.5",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
-  }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "browsersList": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
 }
