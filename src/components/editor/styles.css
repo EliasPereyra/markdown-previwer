@@ -3,6 +3,12 @@
   height: 100%;
   display: flex;
 
+  :is(#editor__markdown-header, #editor__preview-header) {
+    background-color: rgb(14, 26, 50);
+    color: var(--white-c);
+    scrollbar-color: #fac;
+  }
+
   #editor__markdown-side {
     width: 100%;
     display: flex;
@@ -10,13 +16,12 @@
 
     #editor__markdown-header {
       padding: 0.5rem 0.8rem;
-      color: var(--primary-color);
       border-bottom: 0.122rem solid var(--primary-color);
     }
 
     #editor {
       color: #333;
-      background-color: var(--white-c);
+      background-color: var(--bg-c);
       font-family: inherit;
       padding: 0.77rem;
       width: 100%;
@@ -32,14 +37,13 @@
     width: 100%;
 
     #preview {
-      background-color: var(--white-c);
+      background-color: var(--bg-c);
       overflow: auto;
       height: 100%;
       width: 100%;
 
       #editor__preview-header {
         padding: 0.5rem 0.8rem;
-        color: var(--primary-color);
         border-bottom: 0.122rem solid var(--primary-color);
       }
 
